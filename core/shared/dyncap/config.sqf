@@ -1,0 +1,1 @@
+DYNCAP_PATH="core\shared\dyncap\";

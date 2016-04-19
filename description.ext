@@ -1,0 +1,41 @@
+enableDebugConsole = 1;
+
+// GUI
+class RscTitles
+{
+	#include "core\shared\dyncap\gui\captureBar.hpp"
+}
+
+// functions
+class CfgFunctions
+{
+	#include "core\server\CfgFunctions.hpp"
+	#include "core\client\CfgFunctions.hpp"
+	#include "core\shared\CfgFunctions.hpp"
+	#include "core\shared\shk_pos\CfgFunctions.hpp"
+	#include "core\shared\dyncap\CfgFunctions.hpp"
+};
+
+// task framework
+class CfgTaskEnhancements
+{
+   enable       = 1;            //0: disable new task features (default), 1: enable new task features & add new task markers and task widgets into the map
+   3d           = 1;            //0: do not use new 3D markers (default), 1: replace task waypoints with new 3D markers
+   3dDrawDist   = 2000;        //3d marker draw distance (default: 2000)
+   share        = 1;            //0: do not count assigned players (default), 1: count how many players have the task assigned
+   propagate    = 1;            //0: do not propagate (default), 1: propagate shared tasks to subordinates
+};
+
+// debrief
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "You liberated the island from the corrupt dictator";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};

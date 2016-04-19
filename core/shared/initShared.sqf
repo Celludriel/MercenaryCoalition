@@ -1,0 +1,1 @@
+[] execVM "core\shared\dyncap\config.sqf";
