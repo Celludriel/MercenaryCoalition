@@ -39,3 +39,4 @@ _introductionObjective = ["start_area", []] call MCSRV_fnc_createStrategicLocati
 ] call BIS_fnc_taskCreate
 
 // set enemy garrison
+[["o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f"], _introductionObjective] call MCSRV_fnc_garrison;
