@@ -24,3 +24,4 @@ if(typeName _content == "ARRAY" ) then {
 };
 
 _container setVariable ["garrison", _garrison, false];
+_container setVariable ["activeGroup", objNull];

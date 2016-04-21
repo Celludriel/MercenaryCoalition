@@ -1,6 +1,6 @@
 if (!isServer) exitWith {};
 
-params ["_location", "_captureRadius", "_buildingType", "_captureTime", "_side", ["_markerType", "mil_objective"]];
+params ["_location", "_captureRadius", "_buildingType", "_captureTime", "_side", ["_markerType", "mil_objective"], ["_eventScripts", [[],[],[]]]];
 
 private ["_markerName", "_marker"];
 
@@ -34,11 +34,11 @@ waitUntil {alive _captureBuilding};
 
 _captureBuilding allowDamage false;
 _captureBuilding setVariable ["isBeingCaptured", false, true];
-_captureBuilding setVariable ["owner", _side, true];
+_captureBuilding setVariable ["side", _side, true];
 _captureBuilding setVariable ["marker", _markerName, true];
 
 // spawn server thread
-[_captureBuilding, _captureRadius, _captureTime] execVM (DYNCAP_PATH + "dynServerCaptureMonitor.sqf");
+[_captureBuilding, _captureRadius, _captureTime, _eventScripts] execVM (DYNCAP_PATH + "dynServerCaptureMonitor.sqf");
 
 // spawn client threads
 // [[[_captureBuilding,_captureRadius,_captureTime],"dyncap\dynClientCaptureMonitor.sqf"],"BIS_fnc_execVM",true,true] call BIS_fnc_MP;
