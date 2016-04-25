@@ -6,6 +6,7 @@
 if(!isDedicated) exitWith {};
 
 params ["_content", "_container"];
+private ["_garrison"];
 
 _garrison = _container getVariable ["garrison", []];
 

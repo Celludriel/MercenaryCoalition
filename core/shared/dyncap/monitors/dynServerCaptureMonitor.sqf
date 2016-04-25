@@ -1,7 +1,7 @@
 /*
 	_eventScripts format:
 		[
-			[capture scripts],
+			[Capture scripts],
 			[Captured succes scripts],
 			[Capture cancelled scripts]
 		]
@@ -21,20 +21,26 @@ _captureObject setVariable ["isUsed", true, true];
 
 // server handles all the capture logic
 _capturePosition = getPos _captureObject;
+_previousActivatorsCount = 0;
 
 while { alive _captureObject } do {
 	_activators = _capturePosition nearEntities [["CaManBase"], _radius * 2];
 
-	if(count _activators > 0) then {
-		_doCaptureLoop = true;
+	// see if there are enemy activators
+	_currentOwner = _captureObject getVariable "side";
+	_hasEnemyActivators = false;
+	{
+		if(side _x != _currentOwner) exitWith { _hasEnemyActivators = true };
+	} foreach _activators;
 
-		// get the current owner
-		_currentOwner = _captureObject getVariable "side";
+	if(_hasEnemyActivators) then {
+		_doCaptureLoop = true;
 
 		// start the capture loop logic
 		_timeHeld = 0;
 		_lastTimeCheck = time;
 		_lastSideWithSuperiorNumbers = _currentOwner;
+		_previousActivatorsCount = count _activators;
 
 		while {_doCaptureLoop} do {
 			// count which side has superior numbers
@@ -96,6 +102,11 @@ while { alive _captureObject } do {
 					_captureObject setVariable ["timeHeld", 0, true];
 				} else {
 					//diag_log format ["Reset Capturing"];
+
+					{
+						[_captureObject] execVm _x
+					} forEach _cancelEvents;
+
 					// new side is getting the upper hand reset timer for that side
 					_timeHeld = 0;
 					_captureObject setVariable ["timeHeld", 0, true];
@@ -106,8 +117,14 @@ while { alive _captureObject } do {
 
 			//fetch new situation
 			_activators = _capturePosition nearEntities [["CaManBase"], _radius * 2];
-			if(count _activators == 0) then {
+			if(count _activators == 0 && _previousActivatorsCount > 0) then {
 				//diag_log format ["Resetting everything"];
+
+				{
+					[_captureObject] execVm _x
+				} forEach _cancelEvents;
+
+				_previousActivatorsCount = 0;
 				_doCaptureLoop = false;
 				_captureObject setVariable ["isBeingCaptured", false, true];
 				_captureObject setVariable ["timeHeld", 0, true];

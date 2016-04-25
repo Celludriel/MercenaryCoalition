@@ -93,7 +93,7 @@ _possibleWeapons = _gearSelection select 3;
 			};
 		} forEach _possibleOptics;
 
-		if(primaryWeapon _unit) then {
+		if(primaryWeapon _unit != "") then {
 			_roll = (floor random 100) + 1;
 			if(_roll <= 50) then {
 				_unit addPrimaryWeaponItem "muzzle_snds_M";

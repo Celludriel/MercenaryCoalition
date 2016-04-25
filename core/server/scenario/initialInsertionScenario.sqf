@@ -23,7 +23,7 @@ _inventory = [] call compileFinal preprocessFileLineNumbers "core\configuration\
 
 [_ammoBox, _inventory] call MCSRV_fnc_fillContainerInventory;
 
-_introductionObjective = ["start_area", ["o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f"]] call MCSRV_fnc_createStrategicLocation;
+_introductionObjective = ["start_area", ["o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f","o_soldier_universal_f"], 100] call MCSRV_fnc_createStrategicLocation;
 
 // create introduction task
 [

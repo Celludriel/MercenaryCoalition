@@ -2,6 +2,9 @@ if(!isDedicated) exitWith {};
 
 ALERT_LEVEL = 0;
 
+_handle = [] execVM "core\configuration\enemyGearLoadouts.sqf";
+waitUntil { isNull _handle };
+
 _handle = [] execVM "core\server\scenario\initialInsertionScenario.sqf";
 waitUntil { isNull _handle };
 

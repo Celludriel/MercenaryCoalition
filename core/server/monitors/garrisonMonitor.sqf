@@ -3,11 +3,13 @@ if(!isDedicated) exitWith {};
 params ["_garrisonContainer"];
 private ["_currentSide", "_count"];
 
-_activationRange = _garrisonContainer getVariable ["_activationRange", 250];
+_defaultActivationRange = (["StrategicLocationActivationRange"] call BIS_fnc_getParamValue);
+_activationRange = _garrisonContainer getVariable ["activationRange", _defaultActivationRange];
+_maxSpawnRange = _garrisonContainer getVariable ["maxSpawnRange", _defaultActivationRange];
 
-while { alive _garrisonContainer } then {
+while { alive _garrisonContainer } do {
 	sleep 1;
-	_units = _container getVariable ["garrison", []];
+	_units = _garrisonContainer getVariable ["garrison", []];
 
 	_currentSide = _garrisonContainer getVariable ["side", west];
 	_sideToCheck = nil;
@@ -21,14 +23,11 @@ while { alive _garrisonContainer } then {
 
 	if(count _units > 0) then {
 		if(_enemySideCount > 0) then {
-			[_garrisonContainer, _activationRange, _currentSide] call MCSRV_fnc_ungarrison;
+			[_garrisonContainer, _maxSpawnRange, _currentSide] call MCSRV_fnc_ungarrison;
 		};
 	} else {
 		if(_enemySideCount == 0) then {
-			_currentActiveGroup = _container getVariable ["garrison", objNull];
-			if(!isNull _currentActiveGroup) then {
-				[_currentActiveGroup, _garrisonContainer] call MCSRV_fnc_garrison;
-			};
+			[_garrisonContainer, _activationRange, _sideToCheck] execVm "core\server\monitors\shouldGarrisonMonitor.sqf";
 		};
 	};
 };

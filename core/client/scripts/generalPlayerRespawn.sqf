@@ -1,5 +1,5 @@
 if(!hasInterface) exitWith {};
 
-removeAllAssignedItems player;
+//removeAllAssignedItems player;
 removeAllWeapons player;
-removeAllItems player;
+//removeAllItems player;

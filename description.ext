@@ -16,6 +16,12 @@ class CfgFunctions
 	#include "core\shared\dyncap\CfgFunctions.hpp"
 };
 
+// params
+class Params
+{
+	#include "core\server\coreParams.hpp"
+};
+
 // task framework
 class CfgTaskEnhancements
 {
