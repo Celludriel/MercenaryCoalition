@@ -10,6 +10,8 @@ class MercenaryCoalitionServerFunctions {
 		class fillContainerInventory {};
 		class garrison {};
 		class gearUnit {};
+		class getCaptureObjectTypeForSector {};
+		class getIconTypeForSector {};
 		class removeUnit {};
 		class ungarrison {};
 	};

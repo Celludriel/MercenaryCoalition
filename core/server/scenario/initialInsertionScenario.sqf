@@ -37,3 +37,17 @@ _introductionObjective = ["start_area", ["o_soldier_universal_f","o_soldier_univ
 	"Attack",
 	true
 ] call BIS_fnc_taskCreate;
+
+// check for condition of ending the scenario
+waitUntil {
+	sleep 1;
+	_introductionObjective getVariable "side" == west
+};
+
+// end task
+["INS_TASK", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
+
+// spawn mobile hq truck
+_spawnPosition = [_introductionObjective, 10] call ShkPos_fnc_executeFindPosition;
+_hqVehicle = "B_Truck_01_covered_F" createVehicle _spawnPosition;
+[_hqVehicle, ["<t color='#11ff11'>" + (localize "STR_MHQ_DEPLOY") + "</t>", {target call MCCLN_fnc_spawnMobileHqSite;}, [], 6, false, false, "", "(speed (vehicle _target)) < 1 && (getPosATL _target) select 2 < 2"]] remoteExec ["addAction", 0, true];
