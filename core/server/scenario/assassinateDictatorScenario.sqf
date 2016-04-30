@@ -4,13 +4,14 @@ if(!isDedicated) exitWith {};
 _dictator = [] call MCSRV_fnc_spawnDictatorBase;
 
 // create assassinate dictator task
+TASK_ORDER = TASK_ORDER + 1;
 [
 	west,
 	["ASS_DTR_TASK", "GLO_TASK"],
 	["Assassinate the dictator liberating the island", "Assassinate dictator", ""],
 	getPos _dictator,
 	true,
-	2,
+	TASK_ORDER,
 	true,
 	"Kill",
 	true

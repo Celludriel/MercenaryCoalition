@@ -21,7 +21,7 @@ if(typeName _location == "STRING") then {
 // setup marker
 _markerName setMarkerShape "ICON";
 _markerName setMarkerType _markerType;
-_markerName setMarkerSize [0.50, 0.50];
+//_markerName setMarkerSize [0.50, 0.50];
 if(_side == EAST) then {
 	_markerName setMarkerColor "ColorOPFOR";
 } else {
@@ -41,7 +41,6 @@ _captureBuilding setVariable ["marker", _markerName, true];
 [_captureBuilding, _captureRadius, _captureTime, _eventScripts] execVM (DYNCAP_PATH + "monitors\dynServerCaptureMonitor.sqf");
 
 // spawn client threads
-// [[[_captureBuilding,_captureRadius,_captureTime],"dyncap\dynClientCaptureMonitor.sqf"],"BIS_fnc_execVM",true,true] call BIS_fnc_MP;
 [[_captureBuilding, _captureRadius, _captureTime], (DYNCAP_PATH + "monitors\dynClientCaptureMonitor.sqf")] remoteExec ["execVM", -2, true];
 
 _captureBuilding

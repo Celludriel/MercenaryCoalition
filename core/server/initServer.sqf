@@ -1,5 +1,6 @@
 if(!isDedicated) exitWith {};
 
+TASK_ORDER = 1;
 SAVEGAME_NAME = "MercenaryCoalitionSave";
 ALERT_LEVEL = 0;
 MAX_TIME_OF_WEST_OUT_OF_RANGE_BEFORE_GARRISON = 300;
@@ -9,6 +10,18 @@ SECTOR_ICON_TYPES = [["sec_town", "n_art"],["sec_fuel", "loc_Fuelstation"],["sec
 SECTOR_CAPTUREOBJECT_TYPES = [["sec_town", "Flag_Green_F"],["sec_fuel", "Flag_Green_F"],["sec_base", "Flag_Green_F"],["sec_towr", "Land_TTowerBig_1_F"]];
 NR_LUITENANTS_LEFT = 2;
 
+[
+	west,
+	"GLO_TASK",
+	["Find and eliminate the dictator's luitenants to lure him out of hiding", "Find and eliminate the dicatator", ""],
+	objNull,
+	false,
+	TASK_ORDER,
+	false,
+	"Default",
+	true
+] call BIS_fnc_taskCreate;
+
 _handle = [] execVM "core\configuration\enemyGearLoadouts.sqf";
 waitUntil { isNull _handle };
 
@@ -17,15 +30,3 @@ waitUntil { isNull _handle };
 
 _handle = [] execVM "core\server\scenario\initialInsertionScenario.sqf";
 waitUntil { isNull _handle };
-
-[
-	west,
-	["GLO_TASK"],
-	["Find and eliminate the dictator's luitenants to lure him out of hiding", "Find and eliminate the dicatator", ""],
-	objNull,
-	false,
-	1,
-	true,
-	"Default",
-	true
-] call BIS_fnc_taskCreate;

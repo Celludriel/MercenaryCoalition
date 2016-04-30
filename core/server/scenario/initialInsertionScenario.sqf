@@ -27,13 +27,14 @@ _introductionObjective = ["start_area", ["o_soldier_universal_f","o_soldier_univ
 CAPTURE_LOCATIONS pushBack _introductionObjective;
 
 // create introduction task
+TASK_ORDER = TASK_ORDER + 1;
 [
 	west,
 	["INS_TASK", "GLO_TASK"],
 	["Eliminate all opposition and show Altis the town is free by taking the town flag",format ["Free %1", markerText "start_area"],["start_area"]],
 	getMarkerPos "start_area",
 	true,
-	2,
+	TASK_ORDER,
 	true,
 	"Attack",
 	true

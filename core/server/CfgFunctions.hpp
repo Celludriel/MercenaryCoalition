@@ -15,7 +15,7 @@ class MercenaryCoalitionServerFunctions {
 		class removeUnit {};
 		class spawnDictatorBase {};
 		class spawnInventoryContainer {};
-		class spawnLuitenantBase
+		class spawnLuitenantBase {};
 		class spawnMobileComputer {};
 		class spawnMobileHqSite {};
 		class spawnMobileHqVehicle {};

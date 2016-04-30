@@ -9,7 +9,7 @@ deleteVehicle _mobileHq;
 _spawnPosition = [_campFire, 5, 90, 0, [0,0], "Land_CampingTable_F"] call ShkPos_fnc_executeFindPosition;
 _table = createVehicle ["Land_CampingTable_F", _spawnPosition, [], 0, "can_collide"];
 _pc = [_spawnPosition] call MCSRV_fnc_spawnMobileComputer;
-_pc attachTo [_table, [0,0,0.8]];
+_pc attachTo [_table, [0,0,0.4]];
 _table setDir 270;
 
 _spawnPosition = [_campFire, 5, 270, 0, [0,0], "Land_Cargo20_military_green_F"] call ShkPos_fnc_executeFindPosition;
