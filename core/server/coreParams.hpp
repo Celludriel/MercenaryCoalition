@@ -8,7 +8,7 @@ class CoreOptionsTitle {
 class ClearSave {
 	title = $STR_PARAMS_CLEAR_SAVE;
 	values[] = {1,0};
-	texts[] = { "YES", "NO" };
+	texts[] = { $STR_OPTION_YES, $STR_OPTION_NO };
 	default = 0;
 };
 

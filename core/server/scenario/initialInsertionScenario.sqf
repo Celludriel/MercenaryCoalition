@@ -48,6 +48,7 @@ waitUntil {
 ["INS_TASK", "SUCCEEDED", true] spawn BIS_fnc_taskSetState;
 
 // spawn mobile hq truck
-_spawnPosition = [_introductionObjective, 10] call ShkPos_fnc_executeFindPosition;
-_hqVehicle = "B_Truck_01_covered_F" createVehicle _spawnPosition;
-[_hqVehicle, ["<t color='#11ff11'>" + (localize "STR_MHQ_DEPLOY") + "</t>", {target call MCCLN_fnc_spawnMobileHqSite;}, [], 6, false, false, "", "(speed (vehicle _target)) < 1 && (getPosATL _target) select 2 < 2"]] remoteExec ["addAction", 0, true];
+_spawnPosition = [_introductionObjective, 10, random 360, 0, [0,0], "B_Truck_01_covered_F"] call ShkPos_fnc_executeFindPosition;
+
+_hqVehicle = createVehicle ["B_Truck_01_covered_F", _spawnPosition, [], 0, "can_collide"];
+[_hqVehicle, ["<t color='#11ff11'>" + (localize "STR_MHQ_DEPLOY") + "</t>", {(_this select 0) call MCCLN_fnc_spawnMobileHqSite;}, [], 6, false, false, "", "(speed (vehicle _target)) < 1 && (getPosATL _target) select 2 < 2"]] remoteExec ["addAction", 0, true];

@@ -13,6 +13,10 @@ class MercenaryCoalitionServerFunctions {
 		class getCaptureObjectTypeForSector {};
 		class getIconTypeForSector {};
 		class removeUnit {};
+		class spawnInventoryContainer {};
+		class spawnMobileComputer {};
+		class spawnMobileHqSite {};
+		class spawnMobileHqVehicle {};
 		class ungarrison {};
 	};
 };

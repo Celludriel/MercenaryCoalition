@@ -1,4 +1,4 @@
-if(!hasinterface) exitWith {};
+if(!isDedicated) exitWith {};
 
 params ["_spawnPosition"];
 

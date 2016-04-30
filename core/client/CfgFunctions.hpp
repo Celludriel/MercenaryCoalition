@@ -5,8 +5,6 @@ class MCTemplateClientFunctions {
 		file = "core\client\functions";
 
 		class addRespawnScript {};
-		class spawnInventoryContainer {};
-		class spawnMobileComputer {};
 		class spawnMobileHqSite {};
 		class spawnMobileHqVehicle {};
 

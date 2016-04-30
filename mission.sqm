@@ -1,11 +1,11 @@
-version=51;
+version=52;
 class EditorData
 {
 	moveGridStep=1;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=133;
 	class ItemIDProvider
 	{
 		nextID=20;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3664.2261,35.669357,10076.226};
+		pos[]={3625.3997,35.669357,10144.462};
 		dir[]={-0.11451861,-0.60740334,0.78611785};
 		up[]={-0.087561235,0.79438823,0.60106534};
 		aside[]={0.98956847,-9.5693395e-008,0.14415762};
@@ -48,25 +48,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -113,6 +94,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -180,7 +180,7 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={3603.155,15.439505,10248.976};
+			position[]={3609,15.237329,10252};
 			name="start_area";
 			text="Athanos";
 			type="Empty";
@@ -201,7 +201,7 @@ class Mission
 						position[]={3651,2.3521824,10114.05};
 					};
 					side="West";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						isPlayer=1;
@@ -217,7 +217,7 @@ class Mission
 						position[]={3654,2.020829,10115.05};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						isPlayable=1;
@@ -233,13 +233,14 @@ class Mission
 						position[]={3649,2.5647547,10113.05};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						isPlayable=1;
 					};
 					id=9;
 					type="B_Soldier_F";
+					atlOffset=2.3841858e-007;
 				};
 				class Item3
 				{
@@ -249,7 +250,7 @@ class Mission
 						position[]={3651,1.9474846,10110.05};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						isPlayable=1;
@@ -265,7 +266,7 @@ class Mission
 						position[]={3653,1.704834,10111.05};
 					};
 					side="West";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						isPlayable=1;
