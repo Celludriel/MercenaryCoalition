@@ -21,7 +21,8 @@ waitUntil {
 	sleep 5;
 	_ownedSectorCount = 0;
 	{
-		if(side _x == west) then {
+		_side = _x getVariable ["side"];
+		if(_side == west) then {
 			_ownedSectorCount = _ownedSectorCount + 1;
 		};
 	} forEach  CAPTURE_LOCATIONS;
