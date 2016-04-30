@@ -7,7 +7,7 @@ _endCount = 0;
 _enemySideCount = 0;
 _quitMonitor = false;
 
-while { _endCount != 300 } do {
+while { _endCount != MAX_TIME_OF_WEST_OUT_OF_RANGE_BEFORE_GARRISON } do {
 	sleep 5;
 	_enemySideCount = [getPos _garrisonContainer, _activationRange, _sideToCheck] call MCSHR_fnc_getUnitCount;
 	if(_enemySideCount > 0) exitWith { _quitMonitor = true };

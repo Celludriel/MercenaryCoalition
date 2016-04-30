@@ -13,7 +13,9 @@ class MercenaryCoalitionServerFunctions {
 		class getCaptureObjectTypeForSector {};
 		class getIconTypeForSector {};
 		class removeUnit {};
+		class spawnDictatorBase {};
 		class spawnInventoryContainer {};
+		class spawnLuitenantBase
 		class spawnMobileComputer {};
 		class spawnMobileHqSite {};
 		class spawnMobileHqVehicle {};
