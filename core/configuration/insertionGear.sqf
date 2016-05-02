@@ -8,7 +8,7 @@ if(!isDedicated) exitWith {};
 
 	//magazines
 	[
-		["9Rnd_45ACP_Mag", 20]
+		["9Rnd_45ACP_Mag", 50]
 	],
 
 	//items
