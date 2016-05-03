@@ -7,6 +7,7 @@ ALERT_LEVEL = 0;
 NR_LUITENANTS_LEFT = 2;
 MAX_TIME_OF_WEST_OUT_OF_RANGE_BEFORE_GARRISON = 300;
 CAPTURE_TIME = 30;
+TOWN_MANPOWER = 15;
 
 CAPTURE_LOCATIONS = [];
 SECTOR_ICON_TYPES = [["sec_town", "n_art"],["sec_fuel", "loc_Fuelstation"],["sec_base", "o_uav"],["sec_towr", "loc_Transmitter"]];

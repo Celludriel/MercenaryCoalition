@@ -6,6 +6,7 @@ class MercenaryCoalitionServerFunctions {
 
 		class addGearToUnit {};
 		class addToFunds {};
+		class addWorkerToFactory {};
 		class createStrategicLocation {};
 		class fetchEnemyGearLoadoutForAlertLevel {};
 		class fillContainerInventory {};
@@ -13,8 +14,10 @@ class MercenaryCoalitionServerFunctions {
 		class gearUnit {};
 		class getCaptureObjectTypeForSector {};
 		class getIconTypeForSector {};
+		class getRemainingManpower {};
 		class moveInventory {};
 		class removeUnit {};
+		class removeWorkerFromFactory {};
 		class spawnDictatorBase {};
 		class spawnInventoryContainer {};
 		class spawnLuitenantBase {};
