@@ -1,0 +1,14 @@
+/* #Kyxuqu
+$[
+	1.063,
+	["MCBlackMarketGui",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2201,"GarageContainer",[1,"",["0.304062 * safezoneW + safezoneX","0.247 * safezoneH + safezoneY","0.397031 * safezoneW","0.396 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"BlackMarketMissionFundsLabel",[1,"Mission Funds",["0.448438 * safezoneW + safezoneX","0.269 * safezoneH + safezoneY","0.0979687 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1501,"BlackMarketAvailableStockListBox",[1,"",["0.345312 * safezoneW + safezoneX","0.313 * safezoneH + safezoneY","0.319688 * safezoneW","0.099 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"AddToOrderButton",[1,"Add",["0.474219 * safezoneW + safezoneX","0.423 * safezoneH + safezoneY","0.04125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1502,"BlackMarketShoppingCartListBox",[1,"",["0.345313 * safezoneW + safezoneX","0.456 * safezoneH + safezoneY","0.319688 * safezoneW","0.099 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"RemoveFromShoppingCartButton",[1,"Remove",["0.474219 * safezoneW + safezoneX","0.566 * safezoneH + safezoneY","0.04125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"BlackMarketOrderButton",[1,"Order",["0.510312 * safezoneW + safezoneX","0.599 * safezoneH + safezoneY","0.04125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"BlackMarketBackToMenuButton",[1,"Back",["0.443281 * safezoneW + safezoneX","0.599 * safezoneH + safezoneY","0.04125 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/

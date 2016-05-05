@@ -1,0 +1,15 @@
+/* #Sifopa
+$[
+	1.063,
+	["MCGarageGUI",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2202,"GarageContainer",[1,"",["0.304062 * safezoneW + safezoneX","0.247 * safezoneH + safezoneY","0.397031 * safezoneW","0.396 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"OrderQuadButton",[1,"Quad",["0.355625 * safezoneW + safezoneX","0.313 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"OrderHumVeeButton",[1,"Hum Vee",["0.355625 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"OrderTankButton",[1,"Tank",["0.355625 * safezoneW + safezoneX","0.401 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1611,"OrderTransportChopperButton",[1,"Transport Chopper",["0.355625 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1612,"OrderAttackChopperButton",[1,"Attack Chopper",["0.355625 * safezoneW + safezoneX","0.489 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1613,"OrderCombatAirSupportButton",[1,"CAS",["0.355625 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.293906 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1614,"GarageBackToMenuButton",[1,"Back",["0.391719 * safezoneW + safezoneX","0.577 * safezoneH + safezoneY","0.226875 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1002,"GarageMissionFundsLabel",[1,"Mission Funds",["0.448438 * safezoneW + safezoneX","0.269 * safezoneH + safezoneY","0.0979687 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/

@@ -1,0 +1,19 @@
+/* #Fukipe
+$[
+	1.063,
+	["MCSectorManagerGUI",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2203,"SectorManagerContainer",[1,"",["0.304062 * safezoneW + safezoneX","0.247 * safezoneH + safezoneY","0.397031 * safezoneW","0.396 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1003,"TotalManpowerLabel",[1,"Manpower",["0.469062 * safezoneW + safezoneX","0.258 * safezoneH + safezoneY","0.0670312 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1503,"SectorListBox",[1,"",["0.314375 * safezoneW + safezoneX","0.291 * safezoneH + safezoneY","0.170156 * safezoneW","0.286 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1615,"AddWorkerButton",[1,"Add",["0.530937 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.0360937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1616,"RemoveWorkerButton",[1,"Remove",["0.608281 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.0360937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1617,"AddMilitiaButton",[1,"Add",["0.530937 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.0360937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1618,"RemoveMilitiaButton",[1,"Remove",["0.608281 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.0360937 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1619,"UpgradeMilitiaButton",[1,"Upgrade",["0.530937 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.113437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1800,"SectorManagerDetailFrame",[1,"",["0.494844 * safezoneW + safezoneX","0.291 * safezoneH + safezoneY","0.195937 * safezoneW","0.286 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1004,"WorkersLabel",[1,"Workers",["0.530937 * safezoneW + safezoneX","0.313 * safezoneH + safezoneY","0.113437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1005,"MilitiaLabel",[1,"Militia",["0.530937 * safezoneW + safezoneX","0.401 * safezoneH + safezoneY","0.113437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1006,"MilitiaLevelLabel",[1,"Militia level",["0.530937 * safezoneW + safezoneX","0.489 * safezoneH + safezoneY","0.113437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1620,"SectorManagerBackToMenuButton",[1,"Back",["0.438125 * safezoneW + safezoneX","0.599 * safezoneH + safezoneY","0.113437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/

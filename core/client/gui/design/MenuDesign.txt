@@ -1,0 +1,11 @@
+/* #Xypuzi
+$[
+	1.063,
+	["MCMenuGUI",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[2200,"MenuContainer",[1,"",["0.304062 * safezoneW + safezoneX","0.247 * safezoneH + safezoneY","0.397031 * safezoneW","0.396 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1600,"BlackMarketButton",[1,"Black Market",["0.391719 * safezoneW + safezoneX","0.324 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"GarageButton",[1,"Garage",["0.54125 * safezoneW + safezoneX","0.324 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"BuyRespawnTentButton",[1,"Buy Respawn Tent",["0.391719 * safezoneW + safezoneX","0.401 * safezoneH + safezoneY","0.20625 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"SectorManagerButton",[1,"Sector Manager",["0.391719 * safezoneW + safezoneX","0.489 * safezoneH + safezoneY","0.20625 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/
