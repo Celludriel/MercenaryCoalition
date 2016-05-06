@@ -55,5 +55,7 @@ _spawnPosition = [_introductionObjective, 10, random 360, 0, [0,0], "B_Truck_01_
 _hqVehicle = createVehicle ["B_Truck_01_covered_F", _spawnPosition, [], 0, "can_collide"];
 [_hqVehicle, ["<t color='#11ff11'>" + (localize "STR_MHQ_DEPLOY") + "</t>", {(_this select 0) call MCCLN_fnc_spawnMobileHqSite;}, [], 6, false, false, "", "(speed (vehicle _target)) < 1 && (getPosATL _target) select 2 < 2"]] remoteExec ["addAction", 0, true];
 
+clearItemCargoGlobal _hqVehicle;
+
 _handle = [] execVM "core\server\scenario\lureOutLuitenantScenario.sqf";
 waitUntil { isNull _handle };

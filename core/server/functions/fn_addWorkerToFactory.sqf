@@ -1,6 +1,6 @@
 if(!isDedicated) exitWith {};
 
-params ["_factory"]
+params ["_factory"];
 
 private ["_workers"];
 

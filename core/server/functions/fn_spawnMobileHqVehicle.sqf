@@ -20,6 +20,8 @@ _respawnId call BIS_fnc_removeRespawnPosition;
 
 _hqVehicle = createVehicle ["B_Truck_01_covered_F", _spawnPosition, [], 0, "can_collide"];
 
+clearItemCargoGlobal _hqVehicle;
+
 {
 	[_x, _hqVehicle] call MCSRV_fnc_moveInventory;
 	detach _x,

@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3755.4768,274.3396,10064.826};
+		pos[]={3750.2913,395.91394,9845.5596};
 		dir[]={-0.11451861,-0.60740334,0.78611785};
 		up[]={-0.087561235,0.79438823,0.60106534};
 		aside[]={0.98956847,-9.5693395e-008,0.14415762};
@@ -49,25 +49,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -114,6 +95,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -285,7 +285,7 @@ class Mission
 		class Item3
 		{
 			dataType="Marker";
-			position[]={3633.1548,20.116055,10376.698};
+			position[]={4270.9961,47.790573,12233.291};
 			name="sec_town_1";
 			text="sec_town_1";
 			type="Empty";
@@ -294,41 +294,39 @@ class Mission
 		class Item4
 		{
 			dataType="Marker";
-			position[]={3664.6265,22.385735,10463.044};
+			position[]={4302.4678,47.093624,12319.637};
 			name="sec_town_2";
 			text="sec_town_2";
 			type="Empty";
 			id=225;
+			atlOffset=3.8146973e-006;
 		};
 		class Item5
 		{
 			dataType="Marker";
-			position[]={3801.0039,20.491722,10424.31};
+			position[]={4438.8457,92.990685,12280.902};
 			name="sec_town_3";
 			text="sec_town_3";
 			type="Empty";
 			id=226;
-			atlOffset=-1.7166138e-005;
 		};
 		class Item6
 		{
 			dataType="Marker";
-			position[]={3784.8645,16.5625,10339.578};
+			position[]={4422.7061,72.244438,12196.171};
 			name="sec_town_4";
 			text="sec_town_4";
 			type="Empty";
 			id=227;
-			atlOffset=0.067991257;
 		};
 		class Item7
 		{
 			dataType="Marker";
-			position[]={3780.0227,22.848122,10546.161};
+			position[]={4417.8643,55.250809,12402.754};
 			name="sec_town_5";
 			text="sec_town_5";
 			type="Empty";
 			id=228;
-			atlOffset=0.010669708;
 		};
 		class Item8
 		{
@@ -349,11 +347,11 @@ class Mission
 		class Item9
 		{
 			dataType="Marker";
-			position[]={3729.1587,22.071745,10566.407};
+			position[]={4367,44.606812,12423};
 			name="lt_spawn_1";
 			type="Empty";
 			id=230;
-			atlOffset=1.9073486e-006;
+			atlOffset=-8.4092598;
 		};
 	};
 };
